@@ -1,0 +1,43 @@
+= ActsAsSluggable
+
+This plugin makes slugs for your URLs. Does not require
+an extra field in the table.
+
+== Usage
+
+In the models that you want to make sluggable, do this:
+
+  class Article < ActiveRecord::Base
+  
+    acts_as_sluggable :with => 'title'
+  
+  end
+
+Where <tt>'title'</tt> is the name of the attribute from which to extract
+the slug. Now, whenever you do something like this:
+
+  link_to 'Read article', :action => 'show', :id => @article
+
+You will get URLs like this:
+
+  /articles/show/76-omg-my-cat-is-so-cute-lol
+
+= How it works
+
+When using <tt>url_for</tt> and friends, <tt>:id</tt> is a special
+parameter. If you pass a model instance as the <tt>:id</tt>, it will
+send <tt>to_param</tt> to that instance, which defaults to something
+like <tt>id.to_s</tt>. This plugin overrides <tt>to_param</tt> to
+produce a string consisting of the ID and your attribute of choice,
+separated by a dash. The attribute is processed to remove any strange
+characters before it is returned. This process can be overridden by
+creating a <tt>make_slug</tt> method on your models.
+
+Additionally, some ActiveRecord internals are overridden to extract the
+ID again before sending it to the database.
+
+Inspiration and the basic workings of this was lifted from here:
+
+http://www.notsostupid.com/blog/2006/07/07/urls-on-rails/
+
+Thanks :)

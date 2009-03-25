@@ -6,5 +6,7 @@ class User < ActiveRecord::Base
   validates_presence_of :email
   validates_uniqueness_of :email
   
+  acts_as_sluggable :with => :login
+  
   concerned_with :authentication, :pairs
 end
