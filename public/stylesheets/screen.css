@@ -1,3 +1,5 @@
+/* @override http://localhost:3000/stylesheets/screen.css?1238019650 */
+
 /* v1.0 | 20080212 */
 /* from http://meyerweb.com/eric/tools/css/reset/ */
 
@@ -78,26 +80,42 @@ h1 {
 }
 
 
+#content {
+	clear: both;
+}
 
+#header {
+  margin-bottom: 2em;
+}
 
+#logo {
+  font-size: 1.8em;
+  float: left;
+  margin: 1em 0 0 0;
+  font-weight: bold;
+  text-decoration: none;
+  color: #999;
+}
 
 
 #navigation  {
 	font-size:0.9em;
+	float:right;
+	padding: 1em 0 0 0;
 }
 
 
 
 #navigation li {
-	float:left;
 	color:#AAA;
+	display: inline;
+	font-size: 1.2em;
+	font-weight: bold;
 }
 
 #navigation a {
-	float:left;
 	padding:0.3em 0.5em;
 	color:#39F;
-	background-color:#EEE;
 	text-decoration:none;
 }
 
@@ -107,4 +125,20 @@ h1 {
 
 .selected {
 	font-weight: bold;
+}
+
+
+
+
+
+
+
+
+
+
+.clearThis {
+  clear: both;
+  margin: 0px;
+  padding: 0px;
+  height: 1px;
 }

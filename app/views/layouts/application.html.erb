@@ -8,11 +8,17 @@
 </head>
 <body>
   <div id="wrap">
-      <ul id="navigation">
-        <li><%= link_to "Pairs", pairs_url %></li>
-        <li><%= link_to "Users", users_url %></li>
-      </ul>
-    <%= yield %>
+      <div id="header">
+        <ul id="navigation">
+          <li><%= link_to "Pairs", pairs_url %></li>
+          <li><%= link_to "Users", users_url %></li>
+        </ul>
+        <%= link_to "Rock or Pop", pairs_url, :id => "logo" %>
+        <div class="clearThis"> </div>
+      </div>
+      <div id="content">
+        <%= yield %>
+      </div>  
   </div>
 </body>
 </html>
