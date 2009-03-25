@@ -1,0 +1,17 @@
+<h1><%= h @user.login %></h1>
+
+<h2>Information:</h2>
+<p>
+  Has been a member for <%= time_ago_in_words @user.created_at %>.
+  Other than that, we're pretty much clueless as to who this is.
+</p>
+
+<h2>Pictures:</h2>
+<p>
+  No pictures uploaded yet. Maybe soon once we implement this.
+</p>
+
+<h2>Stuff that matters to <%= h @user.login %>:</h2>
+<p>
+  <em>this is where we put the pairs the user has selected.</em>
+</p>
