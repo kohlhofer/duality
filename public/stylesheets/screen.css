@@ -68,6 +68,10 @@ p {
 	line-height:1.4em;
 }
 
+a {
+  color: #39F;
+}
+
 h1 {
 	font-size:1.3em;
 	margin:0 0 1em 0;
@@ -123,12 +127,37 @@ h1 {
 	text-decoration:underline;
 }
 
-.selected {
-	font-weight: bold;
+
+
+.pair {
+  font-size: 1.2em;
+  margin-bottom: 1.5em;
+}
+
+.pair a {
+  padding: 0.3em 1em;
+  text-decoration: none;
+  background-color: #EEE;
 }
 
 
+.optionOne {
+  float:left;
+  width:40%;
+  text-align: right;
+  border-right: 2px solid #CCC;
+}
 
+.optionTwo {
+  float:left;
+  width:45%;
+  text-align: left;
+}
+
+.selected a {
+	background-color: #39F;
+	color: #FFF;
+}
 
 
 
