@@ -6,5 +6,5 @@ class User < ActiveRecord::Base
   validates_presence_of :email
   validates_uniqueness_of :email
   
-  concerned_with :authentication
+  concerned_with :authentication, :pairs
 end

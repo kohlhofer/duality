@@ -28,6 +28,16 @@ namespace :db do
       puts "Creating users..."
       hmans = User.create!(:login => "hmans", :email => "hendrik@mans.de", :password => "moocow")
       kohlhofer = User.create!(:login => "kohlhofer", :email => "kohlhofer@gmail.com", :password => "moocow")
+      
+      # create a bunch of pairs
+      puts "Creating pairs..."
+      hmans.pairs.create!(:items => ['Star Trek', 'Star Wars'])
+      hmans.pairs.create!(:items => ['Well connected', 'Peace and quiet'])
+      hmans.pairs.create!(:items => ['Naughty', 'Nice'])
+      hmans.pairs.create!(:items => ['Tidy', 'Chaos'])
+      kohlhofer.pairs.create!(:items => ['Pay', 'Free'])
+      kohlhofer.pairs.create!(:items => ['HAML', 'ERb'])
+      kohlhofer.pairs.create!(:items => ['Skype', 'iChat'])
     end
   end
 end
