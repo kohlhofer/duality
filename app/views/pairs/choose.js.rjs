@@ -1,1 +1,1 @@
-page.alert "Coming soon. Haha!"
+page.replace_html dom_id(@pair), render(@pair, :selected_item => @choice.item)

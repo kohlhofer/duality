@@ -7,4 +7,12 @@ class ApplicationController < ActionController::Base
 
   # Scrub sensitive parameters from your log
   # filter_parameter_logging :password
+  
+  before_filter :init_site
+  
+protected
+
+  def init_site
+    User.current = User.first   # XXX: OMFG. :)
+  end
 end
