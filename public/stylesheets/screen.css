@@ -76,3 +76,31 @@ h1 {
 	margin:0 auto;
 	width:940px;
 }
+
+
+
+
+
+
+#navigation  {
+	font-size:0.9em;
+}
+
+
+
+#navigation li {
+	float:left;
+	color:#AAA;
+}
+
+#navigation a {
+	float:left;
+	padding:0.3em 0.5em;
+	color:#39F;
+	background-color:#EEE;
+	text-decoration:none;
+}
+
+#navigation a:hover {
+	text-decoration:underline;
+}
