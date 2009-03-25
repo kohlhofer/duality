@@ -4,7 +4,4 @@ class UsersController < ApplicationController
     @users = User.all(:order => "created_at DESC")
   end
   
-  def choose
-  end
-
 end

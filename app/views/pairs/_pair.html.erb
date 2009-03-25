@@ -1,8 +1,8 @@
 <div class="<%= dom_class pair %>" id="<%= dom_id pair %>">
   <div class="<%= dom_class pair, :item_1 %>">
-    <%= link_to_remote h(pair.item_1), :url => choose_user_url(1, :pair_id => pair.id, :item => 1) %>
+    <%= link_to_remote h(pair.item_1), :url => choose_pair_url(pair, :item => 1) %>
   </div>  
   <div class="<%= dom_class pair, :item_2 %>">
-    <%= link_to_remote h(pair.item_2), :url => choose_user_url(1, :pair_id => pair.id, :item => 2) %>
+    <%= link_to_remote h(pair.item_2), :url => choose_pair_url(pair, :item => 2) %>
   </div>  
 </div>

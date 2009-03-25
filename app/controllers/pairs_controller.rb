@@ -4,4 +4,7 @@ class PairsController < ApplicationController
     @pairs = Pair.all
   end
   
+  def choose
+  end
+  
 end
