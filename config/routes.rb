@@ -1,7 +1,7 @@
 ActionController::Routing::Routes.draw do |map|
   map.resource  :session
   map.resources :pairs
-  map.resources :users
+  map.resources :users, :member => { :choose => :post }
 
   map.root :controller => 'dashboard', :action => 'show'
   
