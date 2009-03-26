@@ -145,12 +145,6 @@ h1 {
 .pair {
   padding: 0 0 1em 0;
 }
-.optionOne {
-  float:left;
-  width:250px;
-  text-align: right;
-  background: #EEE;
-}
 
 .stats {
   width: 120px;
@@ -170,21 +164,27 @@ h1 {
   margin: 0 0 0.7em 0;
 }
 
-.optionTwo {
+.option {
   float:left;
   width:250px;
-  text-align: left;
+  text-align: center;
   background: #EEE;
 }
 
-.optionOne a, .optionTwo a {
+.option a {
 	display: block;
 	padding: 1.2em 0.5em;
 	font-size: 1.3em;
+	text-decoration: none;
+	font-weight: bold;
 }
 
-.selected a {
-	background-color: #39F;
+.option a:hover {
+	background-color: #DDD;
+}
+
+.selected a, .selected a:hover {
+	background-color: #93d456;
 	color: #FFF;
 }
 

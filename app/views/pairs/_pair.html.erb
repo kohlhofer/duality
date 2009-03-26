@@ -1,9 +1,9 @@
 <% selected_item ||= nil %>
 <li class="<%= dom_class pair %>" id="<%= dom_id pair %>">
-    <div class="<%= dom_class pair, :item_1 %><%= selected_item == 1 ? " selected" : "" %> optionOne" >
+    <div class="<%= dom_class pair, :item_1 %><%= selected_item == 1 ? " selected" : "" %> option" >
       <%= link_to_remote h(pair.item_1), :url => choose_pair_url(pair, :item => 1) %>
     </div>  
-    <div class="<%= dom_class pair, :item_2 %><%= selected_item == 2 ? " selected" : "" %> optionTwo">
+    <div class="<%= dom_class pair, :item_2 %><%= selected_item == 2 ? " selected" : "" %> option">
       <%= link_to_remote h(pair.item_2), :url => choose_pair_url(pair, :item => 2) %>
     </div>
   <div class="stats">
