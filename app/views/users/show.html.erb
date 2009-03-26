@@ -12,17 +12,24 @@
 <div id="main">
   <h1><%= @page_title = @user.login %></h1>
 
+  <ul id="selector">
+    <li><a href="#"><strong>Answered</strong> (1223)</a></li>
+    <li class="current"><a href="#"><strong>Added</strong> (12)</a></li>
+  </ul>  
   <% if @pairs.any? %>
-    <h2>Pairs <%= h @user.login %> has recently picked:</h2>
     <ul class="pairs">
       <%= render @pairs %>
     </ul>
+  <% else %>
+    <p class="none"><%= h @user.login %> has not answered any questions, yet.</p>
   <% end %>
 
   <% if @user.pairs.any? %>
-    <h2>Pairs <%= h @user.login %> has created:</h2>
+    
     <ul class="pairs">
       <%= render @user.pairs %>
     </ul>
-  <% end %>
+    <% else %>
+       <p class="none"><%= h @user.login %> has not added any questions, yet.</p>
+    <% end %>
 </div>
