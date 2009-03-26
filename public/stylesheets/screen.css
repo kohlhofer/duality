@@ -1,4 +1,10 @@
-/* @override http://localhost:3000/stylesheets/screen.css?1238019650 */
+/* @override 
+	http://localhost:3000/stylesheets/screen.css?1238019650
+	http://localhost:3000/stylesheets/screen.css?1238074486
+	http://localhost:3000/stylesheets/screen.css?1238074762
+	http://localhost:3000/stylesheets/screen.css?1238075260
+	http://localhost:3000/stylesheets/screen.css?1238075820
+*/
 
 /* v1.0 | 20080212 */
 /* from http://meyerweb.com/eric/tools/css/reset/ */
@@ -65,7 +71,6 @@ body {
 
 p {
 	margin:0.7em 0;
-	line-height:1.4em;
 }
 
 a {
@@ -158,6 +163,57 @@ h1 {
 	background-color: #39F;
 	color: #FFF;
 }
+
+
+
+
+
+form p {
+  margin: 1em 0;
+}
+
+
+
+label {
+	display:block;
+	font-size:0.9em;
+	margin-bottom: 0.7em;
+}
+
+label.inlineLabel {
+	display:inline;
+	font-weight:bold;
+	font-size:1em;
+}
+
+input {
+	font-size:1.4em;
+	margin:0;
+}
+
+input[type="submit"], button {
+	padding:0.5em 1.1em;
+	font-size:1em;
+	margin-top: 1em;
+}
+
+div.formError {
+  font-size: 0.9em;
+  color: #F00;
+  margin: 0.3em 0;
+  padding: 0;
+}
+
+div.fieldWithErrors {
+  margin-top: -0.4em;
+}
+
+
+div.fieldWithErrors input {
+  background-color: #FF9;
+}
+
+
 
 
 
