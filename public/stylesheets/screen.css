@@ -67,6 +67,7 @@ body {
 
 p {
 	margin:0.7em 0;
+	line-height: 1.4em;
 }
 
 a {
@@ -161,7 +162,7 @@ h1 {
 
 .stats a {
   display: block;
-  margin: 0 0 0.7em 0;
+  margin: 0 0 0.3em 0;
 }
 
 .option {
@@ -244,6 +245,13 @@ div.fieldWithErrors input {
 
 .clearThis {
   clear: both;
+  margin: 0px;
+  padding: 0px;
+  height: 1px;
+}
+
+.clearLeft {
+  clear: left;
   margin: 0px;
   padding: 0px;
   height: 1px;

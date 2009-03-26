@@ -1,27 +1,28 @@
-<%= gravatar_for @user, :size => 200 %>
 
-<h1><%= @page_title = @user.login %></h1>
-<h2>Information:</h2>
-<p>
-  Has been a member for <%= time_ago_in_words @user.created_at %>.
-  Other than that, we're pretty much clueless as to who this is.
-</p>
 
-<h2>Pictures:</h2>
-<p>
-  No pictures uploaded yet. Maybe soon once we implement this.
-</p>
 
-<% if @pairs.any? %>
-  <h2>Pairs <%= h @user.login %> has recently picked:</h2>
-  <ul class="pairs">
-    <%= render @pairs %>
-  </ul>
-<% end %>
+<div id="sideBar">
+  <p><%= gravatar_for @user, :size => 200 %></p>
+  <p>
+    Has been a member for <%= time_ago_in_words @user.created_at %>.
+    Other than that, we're pretty much clueless as to who this is.
+  </p>
+</div>
 
-<% if @user.pairs.any? %>
-  <h2>Pairs <%= h @user.login %> has created:</h2>
-  <ul class="pairs">
-    <%= render @user.pairs %>
-  </ul>
-<% end %>
+<div id="main">
+  <h1><%= @page_title = @user.login %></h1>
+
+  <% if @pairs.any? %>
+    <h2>Pairs <%= h @user.login %> has recently picked:</h2>
+    <ul class="pairs">
+      <%= render @pairs %>
+    </ul>
+  <% end %>
+
+  <% if @user.pairs.any? %>
+    <h2>Pairs <%= h @user.login %> has created:</h2>
+    <ul class="pairs">
+      <%= render @user.pairs %>
+    </ul>
+  <% end %>
+</div>
