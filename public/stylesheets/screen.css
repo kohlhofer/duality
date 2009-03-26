@@ -139,13 +139,7 @@ h1 {
 
 
 
-.pairs {
 
-}
-
-.pair {
-  padding: 0;
-}
 
 .stats {
   width: 120px;
@@ -169,8 +163,8 @@ h1 {
   float:left;
   width:250px;
   text-align: center;
-  background: #EEE;
   margin-bottom: 1em;
+  background-color: #EEE;
 }
 
 .option a {
