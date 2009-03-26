@@ -1,4 +1,8 @@
-page[@pair].hide
+page[@pair].visual_effect :blind_up
+page[@pair].visual_effect :fade
 if @next_pair
   page.insert_html :bottom, "pairs", render(@next_pair)
+  page[@next_pair].hide
+  page[@next_pair].visual_effect :blind_down
+  page[@next_pair].visual_effect :appear
 end
