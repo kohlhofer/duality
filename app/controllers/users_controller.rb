@@ -21,6 +21,7 @@ class UsersController < ApplicationController
 
   def show
     @user = User.find(params[:id])
+    @pairs = Pair.answered_by(@user)
   end
   
 end

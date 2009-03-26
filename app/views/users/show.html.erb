@@ -12,10 +12,10 @@
   No pictures uploaded yet. Maybe soon once we implement this.
 </p>
 
-<% if @user.chosen_pairs.any? %>
+<% if @pairs.any? %>
   <h2>Pairs <%= h @user.login %> has recently picked:</h2>
   <div class="pairs">
-    <%= render @user.chosen_pairs %>
+    <%= render @pairs %>
   </div>
 <% end %>
 
