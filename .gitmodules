@@ -4,3 +4,6 @@
 [submodule "vendor/plugins/gravatar"]
 	path = vendor/plugins/gravatar
 	url = git://github.com/woods/gravatar-plugin.git
+[submodule "vendor/plugins/quick_scopes"]
+	path = vendor/plugins/quick_scopes
+	url = git://github.com/hmans/quick_scopes.git
