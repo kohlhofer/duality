@@ -1,3 +1,5 @@
+<h1><%= @page_title = "Users" %></h1>
+
 <p>
   <%= @users.map { |u| link_to(h(u.login), u) }.to_sentence %>
 </p>
