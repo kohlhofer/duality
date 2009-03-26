@@ -14,14 +14,14 @@
 
 <% if @user.chosen_pairs.any? %>
   <h2>Pairs <%= h @user.login %> has recently picked:</h2>
-  <div class="pairs">
+  <ul class="pairs">
     <%= render @user.chosen_pairs %>
-  </div>
+  </ul>
 <% end %>
 
 <% if @user.pairs.any? %>
   <h2>Pairs <%= h @user.login %> has created:</h2>
-  <div class="pairs">
+  <ul class="pairs">
     <%= render @user.pairs %>
-  </div>
+  </ul>
 <% end %>
