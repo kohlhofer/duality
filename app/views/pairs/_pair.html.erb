@@ -1,5 +1,5 @@
 <% selected_item ||= nil %>
-<div class="<%= dom_class pair %>" id="<%= dom_id pair %>">
+<li class="<%= dom_class pair %>" id="<%= dom_id pair %>">
   <div class="<%= dom_class pair, :item_1 %><%= selected_item == 1 ? " selected" : "" %> optionOne" >
     <%= link_to_remote h(pair.item_1), :url => choose_pair_url(pair, :item => 1) %>
   </div>  
@@ -10,4 +10,4 @@
     <div class="creator"><%= link_to gravatar_for(pair.creator, :size => 32), pair.creator %></div>
   <% end %>
   <div class="clearThis"> </div>
-</div>
+</li>
