@@ -3,7 +3,7 @@ ActionController::Routing::Routes.draw do |map|
   map.resources :pairs, :member => { :choose => :post }
   map.resources :users
 
-  map.root :controller => 'dashboard', :action => 'show'
+  map.root :controller => 'pairs', :action => 'index'
   
   # The priority is based upon order of creation: first created -> highest priority.
 
