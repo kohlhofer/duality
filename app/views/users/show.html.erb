@@ -11,7 +11,7 @@
   No pictures uploaded yet. Maybe soon once we implement this.
 </p>
 
-<h2>Questions <%= h @user.login %> has recently answered</h2>
-<p>
-  <em>this is where we put the pairs the user has selected.</em>
-</p>
+<h2>Pairs <%= h @user.login %> has recently picked</h2>
+<div class="pairs">
+  <%= render @user.chosen_pairs %>
+</div>
