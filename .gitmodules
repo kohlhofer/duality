@@ -1,3 +1,6 @@
 [submodule "vendor/plugins/machinist"]
 	path = vendor/plugins/machinist
 	url = git://github.com/notahat/machinist.git
+[submodule "vendor/plugins/gravatar"]
+	path = vendor/plugins/gravatar
+	url = git://github.com/woods/gravatar-plugin.git

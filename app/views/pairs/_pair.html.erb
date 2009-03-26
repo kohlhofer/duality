@@ -7,7 +7,7 @@
     <%= link_to_remote h(pair.item_2), :url => choose_pair_url(pair, :item => 2) %>
   </div>
   <% unless pair.creator.blank? %>
-    <div class="creator">by <%= link_to h(pair.creator.login), pair.creator %></div>
+    <div class="creator"><%= link_to gravatar_for(pair.creator, :size => 32), pair.creator %></div>
   <% end %>
   <div class="clearThis"> </div>
 </div>
