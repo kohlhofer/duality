@@ -31,10 +31,18 @@ namespace :db do
       
       # create a bunch of pairs
       puts "Creating pairs..."
-      hmans.pairs.create!(:items => ['Star Trek', 'Star Wars'])
-      hmans.pairs.create!(:items => ['Well connected', 'Peace and quiet'])
-      hmans.pairs.create!(:items => ['Naughty', 'Nice'])
-      hmans.pairs.create!(:items => ['Tidy', 'Chaos'])
+      [
+        ['Star Trek', 'Star Wars'], ['Well connected', 'Peace and quiet'], ['Naughty', 'Nice'],
+        ['Tidy', 'Chaos'], ['Energy Drinks!', 'Eeewwwwwww'], ['Coffee', 'Tea'], ['Rock', 'Pop'],
+        ['Money', 'Happiness'], ['No more Internet', 'No more sex'], ['DVD', 'Cinema'],
+        ["McDonald's", 'Burger King'], ['Rails', 'Java'],
+        ['Mac', 'PC'], ['Agile', 'Waterfall'], ['City trip', 'Beach & sun'],
+        ['High-brow', 'Low-brow'], ['Search', 'Find'], ['Love', 'Be loved'],
+        ['Computer games are art', "No, they're not"],
+        ['Quentin Tarantino', 'Robert Rodriguez']
+      ].each do |items|
+        hmans.pairs.create!(:items => items)
+      end
       kohlhofer.pairs.create!(:items => ['Pay', 'Free'])
       kohlhofer.pairs.create!(:items => ['HAML', 'ERb'])
       kohlhofer.pairs.create!(:items => ['Skype', 'iChat'])
