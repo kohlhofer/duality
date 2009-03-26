@@ -1,9 +1,17 @@
 <h1>Login</h1>
 
 <% form_tag session_url do %>
-  Your Login or Email Address:
-  <%= text_field_tag :login, params[:login] %>
-  Your Password:
-  <%= password_field_tag :password %>
-  <%= submit_tag "Login" %>
+  <p>
+    <%= label_tag :login,'Your Login or Email Address' %>
+    <%= text_field_tag :login, params[:login] %>
+  </p>
+  
+  <p>
+    <%= label_tag :password,'Your Password' %>
+    <%= password_field_tag :password %>
+  </p>
+  
+  <p>
+    <button type="submit" value="submit">Log in</button>
+  </p>
 <% end %>
