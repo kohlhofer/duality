@@ -175,10 +175,11 @@ h1 {
 
 .option a {
 	display: block;
-	padding: 1.2em 0.5em;
+	padding: 1em 1em;
 	font-size: 1.3em;
 	text-decoration: none;
 	font-weight: bold;
+	line-height: 1.3em;
 }
 
 .option a:hover {
