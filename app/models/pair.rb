@@ -20,8 +20,4 @@ class Pair < ActiveRecord::Base
   def items=(list)
     self.item_1, self.item_2 = list
   end
-  
-  def self.find_next_for(user)
-    unanswered_by(user).random.first
-  end
 end

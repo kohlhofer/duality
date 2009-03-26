@@ -31,4 +31,9 @@ class User < ActiveRecord::Base
   def current?
     User.current == self
   end
+  
+  def self.current?
+    !current.nil?
+  end
+  
 end

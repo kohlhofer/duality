@@ -1,1 +1,4 @@
-page.replace dom_id(@pair), render(@next_pair)
+page[@pair].hide
+if @next_pair
+  page.insert_html :bottom, "pairs", render(@next_pair)
+end
