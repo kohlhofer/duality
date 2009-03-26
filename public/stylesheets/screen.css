@@ -4,6 +4,7 @@
 	http://localhost:3000/stylesheets/screen.css?1238074762
 	http://localhost:3000/stylesheets/screen.css?1238075260
 	http://localhost:3000/stylesheets/screen.css?1238075820
+	http://localhost:3000/stylesheets/screen.css?1238075892
 */
 
 /* v1.0 | 20080212 */
@@ -88,6 +89,14 @@ h1 {
 	width:940px;
 }
 
+#main {
+  margin-right: 300px;
+}
+
+#sideBar {
+  float: right;
+  width: 280px;
+}
 
 #content {
 	clear: both;
