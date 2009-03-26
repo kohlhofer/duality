@@ -1,5 +1,5 @@
-<h1><%= h @user.login %></h1>
 
+<h1><%= @page_title = @user.login %></h1>
 <h2>Information:</h2>
 <p>
   Has been a member for <%= time_ago_in_words @user.created_at %>.

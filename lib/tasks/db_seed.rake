@@ -27,7 +27,7 @@ namespace :db do
       # create seed data
       puts "Creating users..."
       hmans = User.create!(:login => "hmans", :email => "hendrik@mans.de", :password => "moocow")
-      kohlhofer = User.create!(:login => "kohlhofer", :email => "kohlhofer@gmail.com", :password => "moocow")
+      kohlhofer = User.create!(:login => "alex", :email => "kohlhofer@gmail.com", :password => "alexpass")
       
       # create a bunch of pairs
       puts "Creating pairs..."
