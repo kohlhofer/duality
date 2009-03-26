@@ -11,7 +11,16 @@
   No pictures uploaded yet. Maybe soon once we implement this.
 </p>
 
-<h2>Pairs <%= h @user.login %> has recently picked</h2>
-<div class="pairs">
-  <%= render @user.chosen_pairs %>
-</div>
+<% if @user.chosen_pairs.any? %>
+  <h2>Pairs <%= h @user.login %> has recently picked:</h2>
+  <div class="pairs">
+    <%= render @user.chosen_pairs %>
+  </div>
+<% end %>
+
+<% if @user.pairs.any? %>
+  <h2>Pairs <%= h @user.login %> has created:</h2>
+  <div class="pairs">
+    <%= render @user.pairs %>
+  </div>
+<% end %>
