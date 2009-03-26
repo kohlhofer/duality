@@ -1,10 +1,5 @@
 /* @override 
-	http://localhost:3000/stylesheets/screen.css?1238019650
-	http://localhost:3000/stylesheets/screen.css?1238074486
-	http://localhost:3000/stylesheets/screen.css?1238074762
-	http://localhost:3000/stylesheets/screen.css?1238075260
-	http://localhost:3000/stylesheets/screen.css?1238075820
-	http://localhost:3000/stylesheets/screen.css?1238075892
+	http://localhost:3000/stylesheets/screen.css
 */
 
 /* v1.0 | 20080212 */
@@ -143,38 +138,55 @@ h1 {
 
 
 
+.pairs {
+
+}
+
 .pair {
-  font-size: 1.2em;
-  margin-bottom: 1.5em;
+  padding: 0 0 1em 0;
 }
-
-.pair a {
-  padding: 0.3em 1em;
-  text-decoration: none;
-  background-color: #EEE;
-}
-
-
 .optionOne {
   float:left;
-  width:40%;
+  width:250px;
   text-align: right;
-  border-right: 2px solid #CCC;
+  background: #EEE;
+}
+
+.stats {
+  width: 120px;
+  margin: 0;
+  float: left;
+  color: #666;
+  font-size: 0.9em;
+}
+
+.stats p {
+	margin: 0;
+	padding: 0 0 0 20px;
+}
+
+.stats a {
+  display: block;
+  margin: 0 0 0.7em 0;
 }
 
 .optionTwo {
   float:left;
-  width:45%;
+  width:250px;
   text-align: left;
+  background: #EEE;
+}
+
+.optionOne a, .optionTwo a {
+	display: block;
+	padding: 1.2em 0.5em;
+	font-size: 1.3em;
 }
 
 .selected a {
 	background-color: #39F;
 	color: #FFF;
 }
-
-
-
 
 
 form p {
