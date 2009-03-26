@@ -12,11 +12,19 @@
         <ul id="navigation">
           <li><%= link_to "Pairs", pairs_url %></li>
           <li><%= link_to "Users", users_url %></li>
+          <% if User.current %>
+            <li><%= link_to "Profile", User.current %></li>
+            <li><%= link_to "Logout", session_url, :method => :delete %></li>
+          <% else %>
+            <li><%= link_to "Signup", new_user_url %></li>
+            <li><%= link_to "Login", new_session_url %></li>
+          <% end %>
         </ul>
         <%= link_to "Rock or Pop", pairs_url, :id => "logo" %>
         <div class="clearThis"> </div>
       </div>
       <div id="content">
+        <%= render 'shared/flashes' %>
         <%= yield %>
       </div>  
   </div>
