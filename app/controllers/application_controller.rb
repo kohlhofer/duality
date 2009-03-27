@@ -17,4 +17,20 @@ protected
       User.current = User.find(session[:user_id]) rescue nil
     end
   end
+  
+  def require_user
+    unless User.current?
+      flash[:notice] = "You need to be logged in to do this."
+      redirect_to new_session_url
+    end
+    true
+  end
+
+  def require_guest
+    if User.current?
+      redirect_to User.current
+    end
+    true
+  end
+  
 end

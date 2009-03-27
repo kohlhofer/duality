@@ -5,6 +5,20 @@
 </div>
   
 <div id="main">
+  <% if User.current? %>
+    <div id="new_pair_form">
+      <% remote_form_for Pair.new, :loading => "$('new_pair').reset(); $('pair_item_1').activate();" do |f| %>
+        <%= f.text_field :item_1 %>
+        or
+        <%= f.text_field :item_2 %>
+        <%= f.submit "Add" %>
+      <% end %>
+      
+      <div id="new_pair_form_status">
+      </div>
+    </div>
+  <% end %>
+  
   <ul class="pairs" id="pairs">
     <%= render @pairs %>
   </ul>
