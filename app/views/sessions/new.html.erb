@@ -1,17 +1,29 @@
-<h1><%= @page_title = "Login" %></h1>
+<% @page_title = "Login" %>
 
-<% form_tag session_url do %>
-  <p>
-    <%= label_tag :login,'Your Login or Email Address' %>
-    <%= text_field_tag :login, params[:login] %>
-  </p>
+<div id="sideBar">
+  <h1><%= @page_title = "Login" %></h1>
+  <div class="intro">
+    <p>Almost there...<p>
+  </div>
+</div>
+
+
+<div id="main">
   
-  <p>
-    <%= label_tag :password,'Your Password' %>
-    <%= password_field_tag :password %>
-  </p>
+  <% form_tag session_url do %>
+    <p>
+      <%= label_tag :login,'Your Login or Email Address' %>
+      <%= text_field_tag :login, params[:login] %>
+    </p>
   
-  <p>
-    <button type="submit" value="submit">Log in</button>
-  </p>
-<% end %>
+    <p>
+      <%= label_tag :password,'Your Password' %>
+      <%= password_field_tag :password %>
+    </p>
+  
+    <p>
+      <button type="submit" value="submit">Log in</button>
+    </p>
+  <% end %>
+
+</div>

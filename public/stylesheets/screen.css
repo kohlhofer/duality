@@ -293,6 +293,12 @@ p.none {
   margin: 0;
 }
 
+div.intro p {
+  font-size: 1.1em;
+  color: #999;
+  margin: 0 0 0.7em 0;
+}
+
 ul#selector li.current a, ul#selector li.current a:hover {
   background-color: #39F;
   color: #FFF;

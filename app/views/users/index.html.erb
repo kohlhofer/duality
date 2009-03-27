@@ -1,7 +1,17 @@
-<h1><%= @page_title = "Users" %></h1>
 
-<ul class="users">
-  <% @users.each do |user| %>
-    <li><%= link_to gravatar_for(user, :size => 64), user %></li>
-  <% end %>
-</ul>
+<div id="sideBar">
+  <h1><%= @page_title = "Users" %></h1>
+  <div class="intro">
+    <p>Find out who else is playing already.<p>
+  </div>
+</div>
+
+<div id="main">
+
+  <ul class="users">
+    <% @users.each do |user| %>
+      <li><%= link_to gravatar_for(user, :size => 64), user %></li>
+    <% end %>
+  </ul>
+
+</div>

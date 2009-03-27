@@ -1,31 +1,42 @@
 
-<h1><%= @page_title = "Signup" %></h1>
 
-<% form_for @user do |f| %>
-  <p>
-    <%= label_tag :user_login,'Desired login name' %>
-    <%= f.text_field :login %>
-    <%= f.error_message_on :login %>
-  </p>
+<div id="sideBar">
+  <h1><%= @page_title = "Signup" %></h1>
+  <div class="intro">
+    <p>It is free and fun and takes only a few seconds.<p>
+    <p>Welcome aboard!<p>
+  </div>
+</div>
+
+<div id="main">
   
-  <p>
-    <%= label_tag :user_email,'Email address' %>
-    <%= f.text_field :email %>
-    <%= f.error_message_on :email %>
-  </p>
-    
-  <p>  
-    <%= label_tag :user_password,'Password' %>
-    <%= f.password_field :password %>
-    <%= f.error_message_on :password %>
-  </p>
-    
-  <p>  
-    <%= label_tag :user_password_confirmation,'Confirm password' %>
-    <%= f.password_field :password_confirmation %>
-  </p>
+  <% form_for @user do |f| %>
+    <p>
+      <%= label_tag :user_login,'Desired login name' %>
+      <%= f.text_field :login %>
+      <%= f.error_message_on :login %>
+    </p>
   
-  <p>
-    <button type="submit" value="submit">Create Account</button>
-  </p>
-<% end %>
+    <p>
+      <%= label_tag :user_email,'Email address' %>
+      <%= f.text_field :email %>
+      <%= f.error_message_on :email %>
+    </p>
+    
+    <p>  
+      <%= label_tag :user_password,'Password' %>
+      <%= f.password_field :password %>
+      <%= f.error_message_on :password %>
+    </p>
+    
+    <p>  
+      <%= label_tag :user_password_confirmation,'Confirm password' %>
+      <%= f.password_field :password_confirmation %>
+    </p>
+  
+    <p>
+      <button type="submit" value="submit">Create Account</button>
+    </p>
+  <% end %>
+
+</div>
