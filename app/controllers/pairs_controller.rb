@@ -9,7 +9,7 @@ class PairsController < ApplicationController
     
     session[:pair_ids] = @pairs.map(&:id)
   end
-  
+
   def choose
     if User.current?
       @pair = Pair.find(params[:id])
@@ -26,6 +26,10 @@ class PairsController < ApplicationController
         page.alert "Please log in!"
       end
     end
+  end
+
+  def show
+    @pair = Pair.find(params[:id], :include => :users)
   end
   
 end

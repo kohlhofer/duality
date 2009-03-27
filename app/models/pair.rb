@@ -2,6 +2,7 @@ class Pair < ActiveRecord::Base
   validates_presence_of :item_1, :item_2
   belongs_to :creator, :class_name => 'User'   # can be nil!
   has_many :choices, :dependent => :destroy
+  has_many :users, :through => :choices
 
   named_scope :answered_by, lambda { |user| { 
     :include => :choices,

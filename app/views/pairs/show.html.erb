@@ -1,0 +1,13 @@
+<h1>Pair</h1>
+<ul class="pairs">
+  <%= render @pair %>
+</ul>
+
+<% if @pair.users.any? %>
+  <h1>Users interested in this</h1>
+  <ul class="users">
+    <% @pair.users.each do |user| %>
+      <%= link_to gravatar_for(user, :size => 32), user %>
+    <% end %>
+  </ul>
+<% end %>
