@@ -9,7 +9,7 @@
   <div class="stats">
     <p>
       <%= link_to gravatar_for(pair.creator, :size => 32), pair.creator %>
-      <span>Taken by <%= pair.choices.count %></span>
+      <span><%= link_to "Taken by #{pair.choices.count}", pair %></span>
     </p>
   </div>
   <div class="clearLeft"> </div>
