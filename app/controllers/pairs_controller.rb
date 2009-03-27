@@ -1,4 +1,6 @@
 class PairsController < ApplicationController
+
+  before_filter :require_user, :only => :create
   
   def index
     if User.current?
@@ -30,6 +32,22 @@ class PairsController < ApplicationController
 
   def show
     @pair = Pair.find(params[:id], :include => :users)
+  end
+  
+  def create
+    @pair = User.current.pairs.build(params[:pair])
+    if @pair.save
+      render :update do |page|
+        page.insert_html :top, "pairs", render(@pair)
+        page[@pair].hide
+        page[@pair].visual_effect :blind_down, :duration => "0.3"
+        page["new_pair_form_status"].replace_html ""
+      end
+    else
+      render :update do |page|
+        page["new_pair_form_status"].replace_html "Failed :-("
+      end
+    end
   end
   
 end
