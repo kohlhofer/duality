@@ -13,6 +13,7 @@ class ApplicationController < ActionController::Base
 protected
 
   def init_site
+    User.current = nil
     if session[:user_id]
       User.current = User.find(session[:user_id]) rescue nil
     end
