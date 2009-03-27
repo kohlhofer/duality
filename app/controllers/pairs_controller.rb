@@ -45,7 +45,7 @@ class PairsController < ApplicationController
       end
     else
       render :update do |page|
-        page["new_pair_form_status"].replace_html "Failed :-("
+        page["new_pair_form_status"].replace_html "Ugh oh... Did you fill in both fields?"
       end
     end
   end
