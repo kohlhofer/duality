@@ -169,11 +169,23 @@ h1 {
 
 .option a {
 	display: block;
-	padding: 1em 1em;
-	font-size: 1.3em;
+	padding: 0 1em;
+	height: 70px;
 	text-decoration: none;
 	font-weight: bold;
-	line-height: 1.3em;
+	line-height: 70px;
+}
+
+.short a {
+  	font-size: 1.5em;
+}
+
+.medium a {
+  	font-size: 1.3em;
+}
+
+.long a {
+  	font-size: 1em;
 }
 
 .option a:hover {
