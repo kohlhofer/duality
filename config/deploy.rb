@@ -33,4 +33,4 @@ namespace :rockorpop do
   end
 end
 
-after 'deploy:update_code',  'aufeinander:copy_database_configuration'
+after 'deploy:update_code',  'rockorpop:copy_database_configuration'
