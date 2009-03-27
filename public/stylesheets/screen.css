@@ -103,8 +103,10 @@ h2 {
 }
 
 #header {
-  margin-bottom: 2em;
+  margin-bottom: 3em;
 }
+
+
 
 #logo {
   font-size: 1.8em;
@@ -171,6 +173,37 @@ h2 {
   text-decoration: underline;
 }
 
+fieldset.item_2_pair, fieldset.item_1_pair {
+  float:left;
+  width:250px;
+  text-align: center;
+  padding:25px 0;
+  border: 2px dashed #DDD;
+  background-color: #f3f3f3;
+}
+
+#new_pair input {
+  width: 210px;
+  font-size: 1.2em;
+}
+
+#new_pair {
+ margin-bottom: 1em;
+}
+
+#new_pair_form_opener {
+  margin:0 0 1em 0;
+  font-weight: bold;
+  color: #333;
+}
+
+#new_pair button {
+ margin: 0 0 0 15px
+}
+
+
+
+
 .option {
   float:left;
   width:250px;
@@ -179,13 +212,11 @@ h2 {
   border: 2px solid #DDD;
 }
 
-.item_2_pair {
+div.item_2_pair, fieldset.item_2_pair {
   border-left: 0;
 }
 
-
-
-.item_1_pair {
+div.item_1_pair, fieldset.item_1_pair {
   border-right: 1px dashed #DDD;
 }
 

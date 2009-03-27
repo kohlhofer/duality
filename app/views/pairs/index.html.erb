@@ -10,16 +10,21 @@
   
 <div id="main">
   <% if User.current? %>
-    <div id="new_pair_form_opener">
-      <%= link_to_function "Add your own pairs", "$('new_pair_form_opener').hide(); $('new_pair_form').show();" %> &raquo;
-    </div>
+    <p id="new_pair_form_opener">
+      <%= link_to_function "Add new Questions?", "$('new_pair_form_opener').hide(); $('new_pair_form').show();" %> or answer below...
+    </p>
     <div id="new_pair_form" style="display: none">
       <% remote_form_for Pair.new, :loading => "$('new_pair').reset(); $('pair_item_1').activate();" do |f| %>
-        <%= f.text_field :item_1 %>
-        or
-        <%= f.text_field :item_2 %>
-        <%= f.submit "Add" %>
+        <fieldset class="item_1_pair">
+          <%= f.text_field :item_1 %>
+        </fieldset>
+        <fieldset class="item_2_pair">
+          <%= f.text_field :item_2 %>
+        </fieldset>
+        <button type="submit" value="submit">Add</button>
+        <div class="clearLeft"> </div>
       <% end %>
+      
       
       <div id="new_pair_form_status">
       </div>
