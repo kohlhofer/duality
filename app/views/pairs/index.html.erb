@@ -5,6 +5,7 @@
   <div class="intro">
     <p>Rock or Pop? This or that? It is your choice.<p>
     <p>You will be surprised how much this simple game reveals...<p>
+    <p><%= link_to "Reload", pairs_url %> new questions.</p>
   </div>
 </div>  
   
@@ -23,11 +24,8 @@
         </fieldset>
         <button type="submit" value="submit">Add</button>
         <div class="clearLeft"> </div>
+        <div id="new_pair_form_status"></div>
       <% end %>
-      
-      
-      <div id="new_pair_form_status">
-      </div>
     </div>
   <% end %>
   

@@ -197,6 +197,11 @@ fieldset.item_2_pair, fieldset.item_1_pair {
   color: #333;
 }
 
+#new_pair_form_status {
+  color: #F00;
+  padding: 0.5em;
+}
+
 #new_pair button {
  margin: 0 0 0 15px
 }
