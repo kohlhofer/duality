@@ -1,14 +1,19 @@
 <h1><%= @page_title = "Stats" %></h1>
 
-<ul class="pairs">
-  <%= render @pair %>
-</ul>
-
-<% if @pair.users.any? %>
-  <h2>Users interested in this</h2>
-  <ul class="users">
-    <% @pair.users.each do |user| %>
-      <li><%= link_to gravatar_for(user, :size => 32), user %></li>
-    <% end %>
+<div id="main">
+  <ul class="pairs">
+    <%= render @pair %>
   </ul>
-<% end %>
+
+  <% if @pair.users.any? %>
+    <h2>Users interested in this</h2>
+    <ul class="users">
+      <% @pair.users.each do |user| %>
+        <li><%= link_to gravatar_for(user, :size => 32), user %></li>
+      <% end %>
+    </ul>
+  <% else %>
+    <p class="none">Nobody has answered this question, yet.</p>
+  <% end %>
+
+</div>
