@@ -75,10 +75,14 @@ a {
 }
 
 h1 {
-	font-size:1.3em;
+	font-size:1.8em;
 	margin:0 0 1em 0;
 }
 
+h2 {
+  	font-size:1.1em;
+	margin:0 0 1em 0;
+}
 
 #wrap {
 	margin:0 auto;
@@ -178,6 +182,8 @@ h1 {
 .item_2_pair {
   border-left: 0;
 }
+
+
 
 .item_1_pair {
   border-right: 1px dashed #DDD;
