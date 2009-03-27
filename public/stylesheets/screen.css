@@ -142,7 +142,8 @@ h1 {
 
 
 .stats {
-  width: 120px;
+  width: 110px;
+  height: 70px;
   margin: 0;
   float: left;
   color: #666;
@@ -151,7 +152,7 @@ h1 {
 
 .stats p {
 	margin: 0;
-	padding: 0 0 0 20px;
+	padding: 0 0 0 15px;
 }
 
 .stats a {
@@ -171,7 +172,15 @@ h1 {
   width:250px;
   text-align: center;
   margin-bottom: 1em;
-  background-color: #EEE;
+  border: 2px solid #DDD;
+}
+
+.item_2_pair {
+  border-left: 0;
+}
+
+.item_1_pair {
+  border-right: 1px dashed #DDD;
 }
 
 .option a {
@@ -196,11 +205,11 @@ h1 {
 }
 
 .option a:hover {
-	background-color: #DDD;
+	background-color: #E0F5B0;
 }
 
 .selected a, .selected a:hover {
-	background-color: #93d456;
+	background-color: #AEE431;
 	color: #FFF;
 }
 
