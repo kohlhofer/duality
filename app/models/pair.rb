@@ -4,6 +4,8 @@ class Pair < ActiveRecord::Base
   has_many :choices, :dependent => :destroy
   has_many :users, :through => :choices
 
+  acts_as_sluggable :with => :slug
+
   named_scope :answered_by, lambda { |user| { 
     :include => :choices,
     :conditions => { 'choices.user_id' => user.id }
@@ -20,5 +22,9 @@ class Pair < ActiveRecord::Base
   
   def items=(list)
     self.item_1, self.item_2 = list
+  end
+  
+  def slug
+    "#{item_1} vs. #{item_2}"
   end
 end
