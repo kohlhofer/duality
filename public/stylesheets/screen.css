@@ -75,8 +75,9 @@ a {
 }
 
 h1 {
-	font-size:1.8em;
-	margin:0 0 1em 0;
+	font-size:1.6em;
+	margin:0 0 0.7em 0;
+  color: #96b800;
 }
 
 h2 {
@@ -114,7 +115,7 @@ h2 {
   margin: 1em 0 0 0;
   font-weight: bold;
   text-decoration: none;
-  color: #999;
+  color: #96b800;
 }
 
 
@@ -355,5 +356,22 @@ ul#selector li.current a, ul#selector li.current a:hover {
   margin: 0px;
   padding: 0px;
   height: 1px;
+}
+
+div.notice_flash, div.error_flash {
+  margin: -1em 0 2em 0;
+  padding: 0.5em 0;
+  font-size: 1.2em;
+  font-weight: bold;
+  color: #71ab23;
+  text-align: center;
+  border: 1px dashed #DDD;
+  border-width: 1px 0;
+  background-color: #f5f5f5;
+}
+
+div.error_flash {
+  color: #F00;
+  background-color: #fffad2;
 }
 
