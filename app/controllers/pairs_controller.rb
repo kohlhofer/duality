@@ -6,7 +6,7 @@ class PairsController < ApplicationController
     if User.current?
       @pairs = Pair.unanswered_by(User.current).random.limit(10)
     else
-      @pairs = Pair.random.limit(3)
+      @pairs = Pair.random.limit(10)
     end
     
     session[:pair_ids] = @pairs.map(&:id)
