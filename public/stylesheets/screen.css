@@ -189,13 +189,19 @@ fieldset.item_2_pair, fieldset.item_1_pair {
 }
 
 #new_pair {
- margin-bottom: 1em;
+ background-color: #FFF;
+ padding: 0;
 }
 
 #new_pair_form_opener {
   margin:0 0 1em 0;
   font-weight: bold;
   color: #333;
+}
+
+form {
+  padding: 0.5em 2em;
+  background-color: #EEE;
 }
 
 #new_pair_form_status {
@@ -266,7 +272,9 @@ form p {
 label {
 	display:block;
 	font-size:0.9em;
-	margin-bottom: 0.7em;
+	margin-bottom: 0.3em;
+	color: #333;
+	font-weight: bold;
 }
 
 label.inlineLabel {
