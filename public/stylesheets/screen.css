@@ -82,7 +82,7 @@ h1 {
 
 h2 {
   	font-size:1.1em;
-	margin:0 0 1em 0;
+	margin:2em 0 1em 0;
 }
 
 #wrap {
@@ -191,7 +191,10 @@ fieldset.item_2_pair, fieldset.item_1_pair {
 #new_pair {
  background-color: #FFF;
  padding: 0;
+ border: 0;
 }
+
+
 
 #new_pair_form_opener {
   margin:0 0 1em 0;
@@ -202,6 +205,7 @@ fieldset.item_2_pair, fieldset.item_1_pair {
 form {
   padding: 0.5em 2em;
   background-color: #EEE;
+  border: 1px solid #DDD;
 }
 
 #new_pair_form_status {
@@ -369,9 +373,8 @@ ul#selector li.current a, ul#selector li.current a:hover {
 div.notice_flash, div.error_flash {
   margin: -1em 0 2em 0;
   padding: 0.5em 0;
-  font-size: 1.2em;
-  font-weight: bold;
-  color: #71ab23;
+  font-size: 1.1em;
+  color: #999;
   text-align: center;
   border: 1px dashed #DDD;
   border-width: 1px 0;
@@ -383,3 +386,30 @@ div.error_flash {
   background-color: #fffad2;
 }
 
+
+
+
+.users h3 {
+	font-size: 1.2em;
+	font-weight: bold;
+}
+
+.users p {
+	color:#999;
+	margin: 0.5em 0;
+}
+
+.users li {
+	padding: 0;
+	margin-bottom: 2em;
+}
+
+
+a.avatarLink {
+ float: left; 
+}
+
+
+.details {
+  margin-left: 75px;
+}

@@ -1,0 +1,8 @@
+<li>
+  <%= link_to gravatar_for(user, :size => 64), user, :class => "avatarLink" %>
+  <div class="details">
+    <h3><%= link_to user.login, user %></h3>
+    <p>Joined <%= time_ago_in_words user.created_at %> ago and has answered <%= user.pairs.count %> Questions so far.</p>
+  </div>
+  <div class="clearLeft"> </div>
+</li>
