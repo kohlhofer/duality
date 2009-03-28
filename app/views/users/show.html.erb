@@ -1,6 +1,3 @@
-
-
-
 <div id="sideBar">
   <p><%= gravatar_for @user, :size => 200 %></p>
   <p>
@@ -11,8 +8,7 @@
 
 <div id="main">
   <h1><%= @page_title = @user.login %></h1>
-
-   
+  
   <% if @pairs.any? %>
     <h2><%= @user.login %> has answered <%= @pairs.count %> questions</h2> 
     <ul class="pairs">
